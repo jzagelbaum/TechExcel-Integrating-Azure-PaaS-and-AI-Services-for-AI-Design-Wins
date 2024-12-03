@@ -99,7 +99,7 @@ resource sqlServer 'Microsoft.Sql/servers@2021-11-01' = {
 resource sqlDatabase 'Microsoft.Sql/servers/databases@2021-11-01' = {
   parent: sqlServer
   name: sqlDatabaseName
-  location: location
+  location: 'EastUS2'
   properties: {
     collation: 'SQL_Latin1_General_CP1_CI_AS'
   }
